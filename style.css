@@ -1,0 +1,75 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@0,300..800;1,300..800&family=Poppins:wght@100;300;400;600;700&display=swap');
+
+:root{
+    --green:#44a276;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--green);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+header .heading{
+    font-size: 3rem;
+    color: #666;
+    padding: 1rem;
+    text-align: center;
+}
+
+header #menu{
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+    margin: 1rem;
+    display: none;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: var(--green);
+    padding: 1rem;
+}
+
+header .navbar ul li{
+    margin: 0 1.5rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .navbar ul li a:hover{
+    color: #666;
+}
