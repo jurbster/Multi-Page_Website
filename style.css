@@ -90,6 +90,7 @@ header .navbar ul li a:hover{
     color: #666;
 }
 
+/***Home page***/
 
 .home{
     min-height: 100vh;
@@ -126,6 +127,81 @@ header .navbar ul li a:hover{
     padding: 1rem 0;
 }
 
+/***About page***/
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.about .image{
+    flex: 1 1 40rem;
+}
+
+.about .image img{
+    width: 100%;
+}
+
+.about .content{
+    flex: 1 1 40rem;
+}
+
+.about .content h1{
+    font-size: 5rem;
+    color: #444;
+}
+
+.about .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+/***Services  page***/
+
+.service{
+    min-height: 100vh;
+    background: #eee;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.service .box-container .box{
+    background: #fff;
+    margin: 2rem;
+    padding: 1rem;
+    width: 30rem;
+    text-align: center;
+    box-shadow: 0 0 0.3rem rgba(0,0,0,0.3);
+}
+
+.service .box-container .box i{
+    font-size: 4rem;
+    padding: 1rem;
+    color: var(--green);
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color: #444;
+}
+
+.service .box-container .box p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem;
+}
 
 
 
@@ -144,6 +220,10 @@ header .navbar ul li a:hover{
     }
 
     .home .content h1{
+        font-size: 4rem;
+    }
+
+    .about .content h1{
         font-size: 4rem;
     }
 }
